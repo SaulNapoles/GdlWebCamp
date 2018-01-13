@@ -188,6 +188,13 @@ color: white;
 border: none;
 }
 
+.button.transparente{
+    background-color: transparent;
+    border: 2px solid white;
+}
+.button.transparente:hover{
+    border: 2px solid #fe4918;    
+}
 ul{
     list-style: none;
     margin: 0;
@@ -705,7 +712,38 @@ footer.info-testimonial cite span{
     text-transform: none;
     margin-top: 5px;
 }
-    
+
+/** Testimoniales **/
+div.newsletter{
+    position: relative;
+    height: auto;
+}
+
+div.newsletter::before{
+background-image: url(../img/bg-newsletter.jpg);
+content: '';
+}    
+
+div.newsletter .contenido{
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+div.newsletter .contenido p{
+    font-size: 1.2em;
+    text-transform: lowercase;
+}
+
+div.newsletter .contenido h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-family: 'PT Sans', sans-serif;        
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
