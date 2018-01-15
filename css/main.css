@@ -180,12 +180,12 @@ h3{
 .button.hollow{
 background-color: white;
 color: #fe4918;
-border: 2px solid #fe4918;
+border: 2px solid #e33000;
 transition: all 1s ease;
 }
 .button.hollow:hover{
 color: white;
-border: none;
+border-color: #e33000;
 }
 
 .button.transparente{
@@ -193,7 +193,7 @@ border: none;
     border: 2px solid white;
 }
 .button.transparente:hover{
-    border: 2px solid #fe4918;    
+    border: 2px solid #e33000; 
 }
 ul{
     list-style: none;
@@ -757,6 +757,53 @@ div.cuenta-regresiva ul li{
     float: left;
     }        
 }    
+
+/**Footer**/
+footer{
+background-color: #353535;
+padding-top: 40px;
+margin-top: 20px;
+}
+
+footer .contenedor>div{
+    color: white;
+    padding: 0 20px;
+    font-size: 12px;
+}
+
+@media only screen and (min-width:768px){
+    footer .contenedor>div{
+    width: 33%;
+    float: left;
+    }
+}
+
+footer h3{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
+
+footer h3 span{
+    color: #fe4918;
+}
+
+footer .ultimos-tweets li{
+    margin-bottom: 10px;
+}
+
+footer nav.redes-sociales{
+    text-align: left;
+}
+p.copyright{
+    background-color:#2e2e2e;
+    color: white;
+    padding: 10px 0;    
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+}
+
 
 /* ==========================================================================
    Helper classes
